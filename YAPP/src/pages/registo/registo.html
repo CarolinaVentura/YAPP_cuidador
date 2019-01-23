@@ -1,0 +1,59 @@
+<!--
+  Generated template for the RegistoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <br>
+    <ion-item>
+      <ion-input type="text" placeholder="Nome próprio" [(ngModel)]="nome" ></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-input type="password" placeholder="Apelido" [(ngModel)]="apelido"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-input type="password" placeholder="Email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-input type="password" placeholder="Número de telemóvel" [(ngModel)]="telemovel"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-input type="password" placeholder="Repetir password" [(ngModel)]="repPassword"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label>Tipo de utilizador</ion-label>
+      <ion-select [(ngModel)]="tipoUtilizador">
+        <ion-option value="cuidador">Cuidador</ion-option>
+        <ion-option value="utente">Utente</ion-option>
+        </ion-select>
+    </ion-item>
+
+
+  </ion-list>
+
+  <br>
+  <button ion-button full (click)="registarDados()">Continuar</button>
+
+
+</ion-content>

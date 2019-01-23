@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>YAPP</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h5>Lista de Utentes</h5>
+ <br>
+  <ion-list>
+
+    <ion-item-sliding #item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img  src="imgs/avatar2.png">
+        </ion-thumbnail>
+        <h2>Ricardo Maia</h2>
+      </ion-item>
+
+      <ion-item-options side="right">
+
+        <button  ion-button (click)="abrirConfig()" > <ion-icon name="cog">   </ion-icon>   EDITAR    </button>
+
+        <button color ="danger" ion-button (click)="mostrarAlerta()" > <ion-icon name="trash">   </ion-icon>  ELIMINAR  </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding #item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img  src="imgs/avatar.png">
+        </ion-thumbnail>
+        <h2>João Neves</h2>
+      </ion-item>
+
+      <ion-item-options side="right">
+
+        <button  ion-button (click)="abrirConfig()"> <ion-icon name="cog">   </ion-icon>   EDITAR  </button>
+
+        <button color ="danger" ion-button (click)="mostrarAlerta()"> <ion-icon name="trash">   </ion-icon>  ELIMINAR  </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,48 @@
+<!--
+  Generated template for the ConfUtentePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Configurações</ion-title>
+    <ion-buttons end>
+    <button ion-button (click)="fecharModal()">FECHAR</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <br>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Receber alerta quando houver<br> um movimento brusco</ion-label>
+      <ion-toggle checked="true"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Receber alerta quando utente <br> sai da zona de segurança</ion-label>
+      <ion-toggle checked="true"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Receber alerta quando houver<br> inatividade </ion-label>
+      <ion-toggle checked="false" [(ngModel)]="isToggled" (ionChange)="showAlert($event)"></ion-toggle>
+
+
+    </ion-item>
+
+
+  </ion-list>
+  <br>
+  <ion-buttons>
+    <button ion-button full (click)="desConta($event)">Desassociar conta</button>
+  </ion-buttons>
+
+
+</ion-content>
